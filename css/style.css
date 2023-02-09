@@ -2,6 +2,8 @@
     --main-page-color: #2E2F42;
     --text-color: #434455;
     --remove-marker-list: none;
+    --l-gradient: linear-gradient(rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7));
 }
 
 * {
@@ -129,6 +131,14 @@ body {
 .section-hero {
     background-color: var(--main-page-color);
     padding-bottom: 188px;
+    background-image: var(--l-gradient), url(../images/people-office.jpg);
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #000000;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+
 }
 
 
@@ -276,6 +286,59 @@ body {
     letter-spacing: 0.02em;
     color: var(--text-color);
     text-align: center;
+}
+
+.soc-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    list-style: var(--remove-marker-list);
+    padding: 8px 16px 32px;
+}
+
+.soc-item {
+    width: 40px;
+    height: 40px;
+}
+
+.soc-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 12px;
+    background-color: #4D5AE5;
+    ;
+}
+
+.soc-link:hover {
+    background-color: #404BBF;
+}
+
+.soc-icon {
+    fill: #F4F4FD;
+    ;
+}
+
+.soc-icon:hover {
+    fill: #F4F4FD;
+}
+
+/*---------------Customers---------------  */
+
+
+.company-list {
+    list-style-type: var(--remove-marker-list);
+}
+
+.title-customers {
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
 }
 
 /*---------------Footer--------------- */
