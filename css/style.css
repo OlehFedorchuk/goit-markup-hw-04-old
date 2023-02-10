@@ -322,16 +322,7 @@ body {
     ;
 }
 
-.soc-icon:hover {
-    fill: #F4F4FD;
-}
-
 /*---------------Customers---------------  */
-
-
-.company-list {
-    list-style-type: var(--remove-marker-list);
-}
 
 .title-customers {
     display: flex;
@@ -339,6 +330,45 @@ body {
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
+    margin-top: 130px;
+    margin-bottom: 72px;
+}
+
+.company-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    list-style-type: var(--remove-marker-list);
+    margin-bottom: 120px;
+}
+
+.company-items {
+    width: calc((100%-120px)/6);
+    height: 88px;
+}
+
+.company-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 16px 32px;
+    border: 1px solid #8e8f99;
+    border-radius: 5px;
+}
+
+.company-link:is(:hover, :focus) {
+    border-color: #404BBF;
+}
+
+.company-link:is(:hover, :focus) .company-icon {
+    fill: #404BBF;
+}
+
+.company-icon {
+    fill: #8E8F99;
 }
 
 /*---------------Footer--------------- */
@@ -364,6 +394,38 @@ body {
     width: 264px;
     margin-top: 16px;
 }
+
+.soc-media {
+    text-align: center;
+
+
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+.soc-media-container {
+    max-width: 208px;
+    max-height: 80px;
+    display: flex;
+    justify-content: right;
+    /* margin-top: 100px;
+    margin-bottom: 130px; */
+
+}
+
+
+.footer-soc-link {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-soc-link:is(:hover, :focus) {
+    background-color: #31D0AA;
+}
+
+
+
 
 /*---------------Portfolio Page--------------- */
 /*---------------Button---------------*/
